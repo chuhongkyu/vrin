@@ -41,8 +41,10 @@ table {
 	border-spacing: 0;
 }
 a, button {
-  text-decoration: none;
-  color: inherit;
-  border: none;
-  background: transparent;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: inherit;
+	border: none;
+	background: transparent;
 }

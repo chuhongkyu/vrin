@@ -1,0 +1,15 @@
+.first{
+    background-color: rgb(5, 7, 14);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.first .container{
+    position: relative;
+    max-width: 1300px;
+    width: calc(100% - 180px);
+    height: 100vh;
+    max-height: 970px;
+    z-index: 1;
+    white-space: pre-wrap;
+}

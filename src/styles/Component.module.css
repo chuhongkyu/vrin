@@ -12,7 +12,7 @@
   cursor: pointer;
 }
 
- .header{
+.header{
   width: 100%;
   height: 70px;
   position: fixed;
@@ -23,19 +23,127 @@
 }
 
 .header-wrapper{
+  padding: 0 80px;
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
 }
 
 .header-wrapper nav ul{
   display: flex;
 }
 
-.header-wrapper nav ul .btn{
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav ul .btn{
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 140%;
   letter-spacing: 0px;
   cursor: pointer;
+  color: rgb(255, 255, 255);
 }
+
+.btn.lang-btn-wrapper{
+
+}
+
+.open-lang-btn{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.btn.lang-btn-wrapper .open-lang-btn button{
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.lang-btn-wrapper .arrow-icon{
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.arrow-icon svg{
+  display: block;
+  width: 24px;
+  height: 24px;
+  user-select: none;
+  display: inline-block;
+  flex-shrink: 0;
+  transition: 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.5rem;
+}
+
+.arrow-icon.up{
+  transform: rotate(180deg);
+  transform-origin: center;
+  transition: 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.btn.lang-btn-wrapper{
+  position: relative;
+}
+
+.lang-menu{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  top: calc(100%);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 138px;
+  background-color: rgb(40, 45, 50);
+  padding: 8px 0px;
+  overflow-y: auto;
+  border-radius: 4px;
+  z-index: 1;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0px;
+}
+
+.lang-menu .menu-btn{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 20px;
+  width: 100%;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.lang-menu .menu-btn .material-symbols-outlined{
+  display: none;
+}
+
+.lang-menu .menu-btn.active{
+  color: rgb(110, 133, 252);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.lang-menu .menu-btn.active .material-symbols-outlined{
+  display: block;
+}
+

@@ -20,6 +20,9 @@ i18n
     resources: {
       ko: {
         translation: {
+          menu: {
+            language : "KOR"
+          },
           main: {
             section01: {
               text1: "AI로 만드는 3D 모델",
@@ -31,6 +34,9 @@ i18n
       },
       en: {
         translation: {
+          menu: {
+            language : "ENG"
+          },
           main: {
             section01: {
               text1: "3D Model generated with AI",
