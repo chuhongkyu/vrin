@@ -45,6 +45,35 @@ i18n
               text1: "3D의 손쉬운 편집과",
               text2: "다양한 활용",
               text3: "VRIN 3D와 함께 시작하세요.",
+            },
+            section05: {
+              caption: "The simplest way to generate",
+              title: "시간도 비용도 절약하는 3D 모델 제작",
+              description1: "무겁고 비싼 3D 스캐닝 장비없이 핸드폰 하나로 완성되는 3D,",
+              description2: "시간과 비용을 절약해 콘텐츠를 효율적으로 제작하세요.",
+              content1: "기기비용 절감",
+              text1: "3D 스캐너 기준",
+              content2: "시간 감축",
+              text2: "모델러 작업시간 기준",
+              content3: "에셋 생성비용 절감",
+              text3: "모델러 인건비 기준",
+            },
+            section06: {
+              caption: "클론 사이트 알수없음",
+              title: "스캔부터 편집까지 VRIN 3D에서 한번에",
+              text1: "<div>모바일 기반의</div><div>간편한</div><div>3D 스캐닝</div>",
+              text2: "<div>스튜디오와 고가의 스캐너 없이도</div><div>누구나, 언제나 가능한 3D 스캐닝</div>",
+              text3: "<div>누구나 손쉬운 편집이</div><div>가능하도록</div><div>VRIN 3D</div><div>에디터</div>",
+              text4: "<div>AI 재질 생성, 배경 편집 등</div><div>에셋을 빠르게 편집</div>",
+            },
+            section07: {
+              caption: "Various contents with VRIN 3D",
+              title: "생성한 3D 모델로 제작하는 다양한 콘텐츠",
+              description1: "VRIN 3D에서 제작한 3D 모델을 다운받아",
+              description2: "상품 홍보, 가상쇼룸, 광고 VFX 등에 사용하세요.",
+              content1: "가상쇼룸",
+              content2: "전시",
+              content3: "상품홍보",
             }
           }
         }
@@ -76,6 +105,18 @@ i18n
               text1: "Easy editing of 3D model",
               text2: "and versatile application",
               text3: "Start creating with VRIN 3D.",
+            },
+            section05: {
+              caption: "The simplest way to generate",
+              title: "3D model production the saves time and cost",
+              description1: "Make 3D model using only smartphone without heavy, expensive 3D scanner",
+              description2: "save time and cost to produce the contents more effectively.",
+              content1: "Cost-saving\non equipment",
+              text1: "Based on 3D Scanner",
+              content2: "Time reduced",
+              text2: "Based on modeler work",
+              content3: "Cost-saving\non asset production",
+              text3: "Based on modeler labor cost",
             }
           }
         }

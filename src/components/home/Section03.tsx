@@ -51,7 +51,7 @@ export default function Section03() {
 
     
     return(
-        <section id="section2" className={styles.second} ref={startRef}>
+        <section id="section3" className={styles["video-section"]} ref={startRef}>
             <div className={styles.content} style={contentStyle}>
                 <video ref={videoRef} muted width="100%" height="100%" loop playsInline autoPlay={false} src={videoURL}/>
                 <div className={styles.dim}></div>
