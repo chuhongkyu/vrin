@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import styles from "styles/Component.module.css";
+import styles from "styles/Component.module.scss";
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -35,10 +35,10 @@ export default function Header() {
                         </li>
                         
                         <li className={styles.btn}>
-                            <Link to={"/login"}>로그인</Link>
+                            <Link to={"/login"} className={styles["btn-login"]}>로그인</Link>
                         </li>
                         <li className={styles.btn}>
-                            <Link to={"/login"}>무료로 시작하기</Link>
+                            <Link to={"/login"} className={styles["btn-free"]}>무료로 시작하기</Link>
                         </li>
                     </ul>
                 </nav>

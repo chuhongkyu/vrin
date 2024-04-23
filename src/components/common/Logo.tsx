@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "styles/Component.module.css";
+import styles from "styles/Component.module.scss";
 
 export default function Logo({ currentColor = "#fff"}){
     

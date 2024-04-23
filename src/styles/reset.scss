@@ -48,3 +48,16 @@ a, button {
 	border: none;
 	background: transparent;
 }
+
+html,
+body{
+	width: 100%;
+    max-width: 100%;
+    font-size: 62.5%;
+    font-weight: 500;
+    font-style: normal;
+    font-family: "Pretendard Variable", sans-serif;
+    line-height: normal;
+    white-space: nowrap;
+	scroll-behavior: smooth;
+}
