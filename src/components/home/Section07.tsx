@@ -13,7 +13,6 @@ export default function Section07() {
                     <span className={styles.title}>{t("main.section07.title")}</span>
                     <span className={styles.description}>
                         <div>{t("main.section07.description1")}</div>
-                        <div>{t("main.section07.description2")}</div>
                     </span>
                     <img src="/assets/home_D-1_PC-0b362984.png" alt="background" className={styles["background-img"]}/>
                 </div>

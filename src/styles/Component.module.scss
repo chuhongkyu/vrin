@@ -88,17 +88,11 @@
                 font-size: 1.4rem;
                 font-weight: 500;
                 line-height: 140%;
-                .material-symbols-outlined{
-                  display: none;
-                }
                 &.active{
                   color: rgb(110, 133, 252);
                   font-size: 1.4rem;
                   font-weight: 500;
                   line-height: 140%;
-                  .material-symbols-outlined{
-                    display: block;
-                  }
                 }
               }              
             }

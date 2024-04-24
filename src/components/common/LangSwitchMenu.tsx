@@ -23,7 +23,7 @@ export default function LangSwitchMenu (){
                         className={`${styles["menu-btn"]} ${i18n.resolvedLanguage === lng.id && styles.active}`} 
                         onClick={() => i18n.changeLanguage(lng.id)}>
                         <span>{lng.lang}</span>
-                        <span className="material-symbols-outlined">done</span>
+                        <span style={{ opacity: i18n.resolvedLanguage === lng.id ? 1 : 0, transition: "300ms ease-in-out" }} className="material-symbols-outlined">done</span>
                     </div>
                 )
             })}

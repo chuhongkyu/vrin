@@ -50,7 +50,7 @@ export default function Section06() {
                                         className={styles.description} 
                                         dangerouslySetInnerHTML={{ __html:t("main.section06.text2")}}>
                                     </span>
-                                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2"><path d="M18.7208 37.5996L16.8008 35.6796L33.1208 19.3596H18.2408V16.6396H37.7608V36.1596H35.0408V21.2796L18.7208 37.5996Z" fill="#F3EEFF"></path><circle cx="28" cy="28" r="27.3333" stroke="#F3EEFF" stroke-width="1.33333"></circle></g></svg>
+                                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2"><path d="M18.7208 37.5996L16.8008 35.6796L33.1208 19.3596H18.2408V16.6396H37.7608V36.1596H35.0408V21.2796L18.7208 37.5996Z" fill="#F3EEFF"></path><circle cx="28" cy="28" r="27.3333" stroke="#F3EEFF" strokeWidth="1.33333"></circle></g></svg>
                             </div>
                             <img src="/assets/home_C-1_PC_ko-093e56a1.png" alt="initial" className={styles["initial-img"]}/>
                             <img id="video-image" src="/assets/home_C-3_PC-52386fbc.png" alt="frame" className={styles["frame-img"]}/>
@@ -67,7 +67,7 @@ export default function Section06() {
                                     className={styles.description} 
                                     dangerouslySetInnerHTML={{ __html:t("main.section06.text4")}}>
                                 </span>
-                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2"><path d="M18.7208 37.5996L16.8008 35.6796L33.1208 19.3596H18.2408V16.6396H37.7608V36.1596H35.0408V21.2796L18.7208 37.5996Z" fill="#F3EEFF"></path><circle cx="28" cy="28" r="27.3333" stroke="#F3EEFF" stroke-width="1.33333"></circle></g></svg>
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2"><path d="M18.7208 37.5996L16.8008 35.6796L33.1208 19.3596H18.2408V16.6396H37.7608V36.1596H35.0408V21.2796L18.7208 37.5996Z" fill="#F3EEFF"></path><circle cx="28" cy="28" r="27.3333" stroke="#F3EEFF" strokeWidth="1.33333"></circle></g></svg>
                             </div>
                             <img src="/assets/home_C-2_PC_ko-5168634f.png"  alt="initial" className={styles["initial-img"]}/>
                             {imgFrame.map((el, i) =>{
