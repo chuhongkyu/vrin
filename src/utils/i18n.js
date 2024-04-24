@@ -62,7 +62,7 @@ i18n
               text3: "모델러 인건비 기준",
             },
             section06: {
-              caption: "클론 사이트 알수없음",
+              caption: "One-stop solution",
               title: "스캔부터 편집까지 VRIN 3D에서 한번에",
               text1: "<div>모바일 기반의</div><div>간편한</div><div>3D 스캐닝</div>",
               text2: "<div>스튜디오와 고가의 스캐너 없이도</div><div>누구나, 언제나 가능한 3D 스캐닝</div>",
@@ -84,7 +84,8 @@ i18n
             text3: "기록하고 싶은 사물, 혹은 사람을 VRIN 3D로 촬영하고 피규어로 만들어보세요. 3D 프린팅하여 배송까지 해드립니다.",
             text4: "*이 이벤트는 한국, 일본 지역에서만 참여 가능합니다.",
             text5: "자세히 알아보기",
-            text6: "오늘 하루 보지 않기"
+            text6: "오늘 하루 보지 않기",
+            text7: "*한국, 일본 지역에서만 참여 가능합니다."
           },
           float: {
             text1 : "아직도 망설여지세요?",
@@ -158,7 +159,8 @@ i18n
             text3: "Capture the objects or people you want to cherish with VRIN 3D and turn them into figures. Let us take care of the 3D printing and delivery for you.",
             text4: "*Only Korea and Japan area are available for this event.",
             text5: "Learn more",
-            text6: "Don't show me today"
+            text6: "Don't show me today",
+            text7: "Korea and Japan area are available for this event."
           },
           float: {
             text1 : "Still hesitating?",

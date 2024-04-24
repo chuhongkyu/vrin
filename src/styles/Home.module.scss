@@ -27,10 +27,10 @@
                 font-weight: 700;
                 line-height: normal;
                 margin-bottom: 12px;
-                color: rgb(230, 232, 235);
+                color: $color-white2;
             }
             .description{
-                color: rgb(189, 193, 199);
+                color: $color-gray;
                 font-size: 3.2rem;
                 font-weight: 400;
                 line-height: 140%;
@@ -225,8 +225,8 @@
                         font-weight: 400;
                         line-height: 140%;
                     }
-                    .description{
-                        color: rgb(189, 193, 199);
+                    .desc{
+                        color: $color-gray;
                         font-size: 1.6rem;
                         font-weight: 400;
                         line-height: 140%;
@@ -260,7 +260,7 @@
                             line-height: 140%;
                             white-space: pre-wrap;
                         }
-                        .description{
+                        .desc{
                             display: none;
                             color: $color-white;
                             font-size: clamp(2rem, 1.5vw, 3.2rem);
@@ -327,7 +327,7 @@
                         .title, svg{
                             display: none;
                         }
-                        .description{
+                        .desc{
                             display: block;
                         }
                         .initial-img{
@@ -553,7 +553,7 @@
                     }
                     .modal-desc-2{
                         margin-top: 16px;
-                        color: rgb(189, 193, 199);
+                        color: $color-gray;
                         font-size: 1.6rem;
                         font-weight: 400;
                         line-height: 140%;
@@ -631,7 +631,7 @@
                     .text{
                         display: block;
                         margin-left: 8px;
-                        color: rgb(189, 193, 199);
+                        color: $color-gray;
                         font-size: 1.6rem;
                         font-weight: 400;
                         line-height: 140%;
@@ -669,7 +669,7 @@
             align-items: center;
             -webkit-box-pack: center;
             justify-content: center;
-            background: rgb(230, 232, 235);
+            background: $color-white2;
             border-radius: 6px;
             padding: 16px 56px;
             display: flex;
@@ -686,3 +686,340 @@
         }
     }
 }
+
+@media screen and (max-width:$laptop-width) {
+    .video-section{
+        .element{
+            .wrapper{
+                .right{
+                    .text-group{
+                        .title{
+                            font-size: 4rem;
+                        }
+                    }
+                    .description{
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+        }
+    }
+    .static-section{
+        .container{
+            .element{
+                .content-group[data-type="hover"]{
+                    .content{
+                        &.left{
+                            .initial-img{
+
+                            }
+                            .frame-img{
+                                top: 34px;
+                            }
+                            .video{
+                                top: 15vw;
+                                right: 4.75vw;
+                            } 
+                        }
+                        &.right{
+                            .initial-img{
+                                top: 165px;
+                            }
+                            .frame-img{
+                                top: 180px;
+                                right: -12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$tablet-width) {
+    .first{
+        .container{
+            max-width: 844px;
+            max-height: 870px;
+            .element{
+                .text-group{
+                    font-size: 4.8rem;
+                }
+                .description{
+                    font-size: 2.4rem;
+                }
+                .btn-free{
+                    max-width: 243px;
+                    margin-top: 48px;
+                    a{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    .video-section{
+        .element{
+            .wrapper{
+                .left{
+                    width: 36px;
+                    height: 80px;
+                    padding: 12px 10px;
+                    svg{
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+                .right{
+                    .text-group{
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
+    .static-section{
+        .container{
+            max-width: 844px;
+            padding: 100px 0px;
+            .element{
+                .caption{
+                    font-size: 1.8rem;
+                    margin-bottom: 8px;
+                }
+                .title{
+                    font-size: 3.2rem;
+                    font-weight: 600;
+                }
+                .description{
+                    font-size: 1.8rem;
+                    margin-top: 12px;
+                }
+                .background-img{
+                    max-width: 280px;
+                    margin-top: 85px;        
+                }
+                .content-group[data-type="scroll"]{
+                    margin-top: 40px;
+                    padding: 48px 0px;
+                    .content{
+                        gap: 4px;
+                        .number-indicator{
+                            .number{
+                                font-size: 5.6rem;
+                            }
+                            svg{
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+                        .title{
+                            font-size: 1.8rem;
+                        }
+                        .desc{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                .content-group[data-type="hover"]{
+                    margin-top: 40px;
+                    gap: 28px;
+                    .content{
+                        max-width: 408px;
+                        height: 420px;
+                        border-radius: 16px;
+                        padding: 40px 44px;
+                        .element{
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            gap: 8px;
+                            .title{
+                                font-size: 2.4rem;
+                            }
+                            .desc{
+                                font-size: 2rem;
+                            }
+                            svg{
+                                min-width: 40px;
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+                        &.left{
+                            .initial-img{
+                                width: 107%;
+                                min-width: 415px;
+                                top: 17px;
+                                right: -20px;
+                            }
+                            .frame-img{
+                                min-width: 415px;
+                                top: 20px;
+                                right: -18px;
+                            }
+                            .video{
+                                min-width: 152px;
+                                top: 16vw;
+                                right: 59px;
+                            } 
+                        }
+                        &.right{
+                            .initial-img{
+                                width: 85%;
+                                min-width: 320px;
+                                top: 115px;
+                                right: 35px;
+                            }
+                            .frame-img{
+                                top: 180px;
+                                right: -12px;
+                            }
+                        }
+                    }
+                }
+            }
+            .content-slider{
+                left: 50px;
+                width: 903px;
+                .card{
+                    width: 285px;
+                    height: 404px;
+                    .text-group{
+                        bottom: 24px;
+                        left: 22px;
+                        .text{
+                            font-size: 2.4rem;
+                            font-weight: 700;
+                            line-height: 168%;
+                            color: $color-white;
+                        }
+                        .icon{
+                            width: 22px;
+                            height: 22px;
+                        }
+                    }
+                    .dim{
+
+                    }
+                }
+                .arrow-content{
+                    left: 48px;
+                    .prev,.next { cursor: pointer;}
+                    .next{
+                        margin-left: 16px;
+                    }
+                }
+                .dim{
+                    right: 107px;
+                    width: 200px;
+                    height: 404px;
+                }
+            }
+        }
+    }
+
+    .modal{
+        .banner{
+            height: 240px;
+        }
+    }
+
+
+    .float-container{
+        .element{
+            h5{
+                font-size: 2.8rem;
+            }
+            a{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$mobile-width) {
+    .first{
+        .container{
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+    .modal-root{
+        .modal-dim{
+            .modal{
+                width: 280px;
+                background-color: transparent;
+                border-radius: 8px;
+                .content{
+                    padding: 20px;
+                    background-color: rgb(24, 28, 32);
+                    border-bottom-left-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                    .text-group{
+                        .modal-title{
+                            font-size: 1.2rem;
+                            font-weight: 500;
+                            svg{
+                                display: block;
+                                width: 16px;
+                                height: 16px; 
+                            }
+                        }
+                        .modal-desc{
+                            font-size: 2rem;
+                        }
+                        .modal-desc-2{
+                            font-size: 1.2rem;
+                            font-weight: 500;
+                            small{
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                    .btn-more{
+                        margin: 20px 0;
+                        width: 100%;
+                        max-width: 240px;
+                        span{
+                            font-size: 1.6rem;
+                            line-height: normal;
+                        }
+                    }
+                }
+                .banner{
+                    height: auto;
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+                }
+                .modal-caption{
+                    justify-content: center;
+                    .modal-text-group{
+                        display: flex;
+                        align-items: center;
+                        .checkbox-group{
+                            .box-svg{
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                        
+                        .text{
+                            font-size: 1.2rem;
+                            font-weight: 500;
+                            line-height: 130%;
+                        }
+                    }
+                }
+                .x-btn{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 16px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+

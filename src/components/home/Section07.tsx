@@ -2,10 +2,11 @@ import { useTranslation } from "react-i18next";
 import styles from "styles/Home.module.scss";
 import SlickSlider from "./SlickSlider";
 import FloatBtn from "./FloatBtn";
+import { useCheckwViewPort } from "utils/helper";
 
 export default function Section07() {
     const { t } = useTranslation();
-    
+    const tablet = useCheckwViewPort(1024 + 1);
     return(
         <section id="section07" className={styles["static-section"]}>
             <div className={styles["container"]}>
@@ -15,7 +16,7 @@ export default function Section07() {
                     <span className={styles.description}>
                         <div>{t("main.section07.description1")}</div>
                     </span>
-                    <img src="/assets/home_D-1_PC-0b362984.png" alt="background" className={styles["background-img"]}/>
+                    <img src={tablet ? "/assets/home_D-1_Laptop-1ca25de5.png": "/assets/home_D-1_PC-0b362984.png"} alt="background" className={styles["background-img"]}/>
                 </div>
                 <SlickSlider/>
             </div>

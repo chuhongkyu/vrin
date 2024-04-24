@@ -185,3 +185,18 @@
     }
   }
 }
+
+@media screen and (max-width:$tablet-width) {
+  .header{
+    .header-wrapper{
+      padding: 0 70px;
+      .nav{ul{
+        .btn{
+            &:not(:last-of-type){
+              margin-right: 32px;
+            }
+        }
+      }}
+    }
+  }
+}

@@ -46,7 +46,7 @@ export default function Section05() {
                                 </svg>
                             </div>
                             <span className={styles.title}>{t("main.section05.content1")}</span>
-                            <span className={styles.description}>{t("main.section05.text1")}</span>
+                            <span className={styles.desc}>{t("main.section05.text1")}</span>
                         </div>
                         <div className={styles.content}>
                             <div className={styles["number-indicator"]}>
@@ -54,7 +54,7 @@ export default function Section05() {
                                 <svg xmlns="http://www.w3.org/2000/svg" width="57" height="56" viewBox="0 0 57 56" fill="none"><path d="M25.4672 7.0828L29.427 7.0828L29.427 40.7411L44.7713 25.3969L47.5761 28.2017L27.4471 48.3307L7.31817 28.2017L10.123 25.3969L25.4672 40.7411L25.4672 7.0828Z" fill="#3737CC"></path></svg>
                             </div>
                             <span className={styles.title}>{t("main.section05.content2")}</span>
-                            <span className={styles.description}>{t("main.section05.text2")}</span>
+                            <span className={styles.desc}>{t("main.section05.text2")}</span>
                         </div>
                         <div className={styles.content}>
                             <div className={styles["number-indicator"]}>
@@ -63,7 +63,7 @@ export default function Section05() {
                                 </svg>
                             </div>
                             <span className={styles.title}>{t("main.section05.content3")}</span>
-                            <span className={styles.description}>{t("main.section05.text3")}</span>
+                            <span className={styles.desc}>{t("main.section05.text3")}</span>
                         </div>
                     </div>
                 </div>

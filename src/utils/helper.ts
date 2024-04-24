@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 function lockScroll() {
     document.body.style.overflow = "hidden"
 }
@@ -13,4 +15,23 @@ function setCookie() {
     document.cookie = `ces_cookie=true; path=/; expires=${tomorrow.toUTCString()}; secure`;
 }
 
-export { lockScroll, unlockScroll, setCookie}
+
+function useCheckwViewPort(maxWidth: number) {
+    const [width, setWidth] = useState<boolean>(window.innerWidth < maxWidth);
+  
+    useEffect(() => {
+        const handleResize = () => {
+            setWidth(window.innerWidth < maxWidth);
+        };
+    
+        window.addEventListener('resize', handleResize);
+    
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, [maxWidth]);
+
+    return width;
+}
+
+export { lockScroll, unlockScroll, setCookie, useCheckwViewPort}
