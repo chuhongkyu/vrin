@@ -4,6 +4,7 @@ import SlickSlider from "./SlickSlider";
 import FloatBtn from "./FloatBtn";
 import { useCheckwViewPort } from "utils/helper";
 import MobileSlickSlider from "./MobileSlickSlider";
+import { useRef } from "react";
 
 export default function Section07() {
     const { t } = useTranslation();
