@@ -21,7 +21,10 @@ i18n
       ko: {
         translation: {
           menu: {
-            language : "KOR"
+            nav1: "가격정책",
+            language : "KOR",
+            nav2: "로그인",
+            btn: "무료로 시작하기"
           },
           main: {
             section01: {
@@ -74,13 +77,28 @@ i18n
               content2: "전시",
               content3: "상품홍보",
             }
+          },
+          modal: {
+            text1: "3D 프린팅 이벤트",
+            text2: "<div>나의 소중한 물건을</div><div>3D 피규어로 받아보세요</div>",
+            text3: "기록하고 싶은 사물, 혹은 사람을 VRIN 3D로 촬영하고 피규어로 만들어보세요. 3D 프린팅하여 배송까지 해드립니다.",
+            text4: "*이 이벤트는 한국, 일본 지역에서만 참여 가능합니다.",
+            text5: "자세히 알아보기",
+            text6: "오늘 하루 보지 않기"
+          },
+          float: {
+            text1 : "아직도 망설여지세요?",
+            text2: "무료로 시작하기"
           }
         }
       },
       en: {
         translation: {
           menu: {
-            language : "ENG"
+            nav1: "Pricing",
+            language : "ENG",
+            nav2: "Log in",
+            btn: "Get started for free"
           },
           main: {
             section01: {
@@ -118,7 +136,7 @@ i18n
               text3: "Based on modeler labor cost",
             },
             section06: {
-              caption: "클론 사이트 알수없음",
+              caption: "One-stop solution",
               title: "From scanning to editing\nat one go with VRIN 3D",
               text1: "<div>Mobile-based</div><div>Easy-to-use</div><div>3D scanning</div>",
               text2: "<div>3D scanning made possible</div><div>for anyone, anywhere</div><div>Without studio</div><div>and expensive scanner</div>",
@@ -133,6 +151,18 @@ i18n
               content2: "Exhibition",
               content3: "Product Promotion",
             }
+          },
+          modal: {
+            text1: "3D object print event",
+            text2: "<div>Turn your treasures</div><div>into 3D figures</div>",
+            text3: "Capture the objects or people you want to cherish with VRIN 3D and turn them into figures. Let us take care of the 3D printing and delivery for you.",
+            text4: "*Only Korea and Japan area are available for this event.",
+            text5: "Learn more",
+            text6: "Don't show me today"
+          },
+          float: {
+            text1 : "Still hesitating?",
+            text2: "Get started for free"
           }
         }
       }

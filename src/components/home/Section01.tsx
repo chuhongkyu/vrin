@@ -16,7 +16,7 @@ export default function Section01() {
                             <div>{t("main.section01.text3")}</div>
                         </span>
                         <button className={styles["btn-free"]} type="button">
-                            <Link to={"/login"}>{t("main.section01.btn")}</Link>
+                            <Link to={"/register"}>{t("main.section01.btn")}</Link>
                         </button>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 import Modal from 'components/Modal';
+import ScrollToTop from 'components/ScrollToTop';
 import Header from 'components/common/Header';
 import ScrollContainer from 'components/home/ScrollContainer';
 import SliderView from 'components/home/SliderView';
@@ -20,10 +21,12 @@ function App() {
 
   useEffect(()=>{
     dispatch({ type: "CHECK_TODAY_MODAL" })
+    dispatch({ type: "HANDLE_HEADER", payload : "NORMAL"})
   },[])
 
   return (
     <>
+      <ScrollToTop/>
       <Header/>
       <ScrollContainer/>
       {viewMode && <SliderView />}

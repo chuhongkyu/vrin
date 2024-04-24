@@ -2,6 +2,7 @@ export interface IState {
     modal: boolean;
     viewMode: boolean;
     viewData: string;
+    headerType: "NORMAL" | "ACTIVE"
 }
 
 export interface IContext {
@@ -29,4 +30,9 @@ interface OpenViewModeAction {
     payload: boolean;
 }
 
-export type IAction = CheackTodayAction | OnHandleViewModeAction | OpenViewModeAction | CloseModalAction;
+interface OnHandleHeaderAction {
+    type: "HANDLE_HEADER";
+    payload: "NORMAL" | "ACTIVE"
+}
+
+export type IAction = CheackTodayAction | OnHandleViewModeAction | OpenViewModeAction | CloseModalAction | OnHandleHeaderAction;

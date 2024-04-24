@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import styles from "styles/Home.module.scss";
+import { useFullScreen } from "utils/useFullScreen";
 
 const videoURL = "/assets/home_content_1_PC-3cb3a75d.mp4"
 const initialStyle = { position: 'absolute', top: "0px", bottom: "unset" } as React.CSSProperties;
@@ -9,7 +10,7 @@ const endStyle = { position: 'absolute', top: "unset", bottom: "-2px" } as React
 
 export default function Section02() {
     const { t } = useTranslation();
-    
+    const { dispatch } = useFullScreen()
     const [contentStyle, setContentStyle] = useState(initialStyle);
     const startRef = useRef<HTMLDivElement>(null);
     const endRef = useRef<HTMLDivElement>(null);
@@ -23,8 +24,10 @@ export default function Section02() {
 
             if (startRect && startRect.top <= 0) {
                 setContentStyle(isScrollStyle);
+                dispatch({ type: "HANDLE_HEADER", payload: "ACTIVE"})
             } else {
                 setContentStyle(initialStyle);
+                dispatch({ type: "HANDLE_HEADER", payload: "NORMAL"})
             }
 
             if (endRect && endRect.top <= 0) {

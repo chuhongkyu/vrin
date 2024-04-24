@@ -4,7 +4,8 @@ import { IAction, IContext, IState } from "utils/types";
 const initialState:IState = {
     modal: true,
     viewMode: false,
-    viewData: "showroom"
+    viewData: "showroom",
+    headerType: "NORMAL"
 };
 
 function reducer(state:IState, action:IAction){
@@ -22,6 +23,8 @@ function reducer(state:IState, action:IAction){
             return { ...state, viewMode: action.payload };
         case "HANDLE_VIEW_MODE":
             return { ...state, viewData: action.payload };
+        case "HANDLE_HEADER":
+            return { ...state, headerType: action.payload };
     default:
         return state;
     }

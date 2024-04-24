@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import styles from "styles/Home.module.scss";
 import SlickSlider from "./SlickSlider";
+import FloatBtn from "./FloatBtn";
 
 export default function Section07() {
     const { t } = useTranslation();
@@ -18,6 +19,7 @@ export default function Section07() {
                 </div>
                 <SlickSlider/>
             </div>
+            <FloatBtn/>
         </section>
     )
 }

@@ -9,24 +9,26 @@ export const routerInfo = [
     {
       path: "/",
       element: <App/>,
+      errorElement: <NotFound/>
+    },
+    {
+      path: "/pricing",
+      element: <Price/>,
       errorElement: <NotFound/>,
-      children: [
-        {
-          path: "pricing",
-          element: <Price/>,
-        },
-        {
-          path: "login",
-          element: <Login/>,
-        },
-        {
-          path: "register",
-          element: <Register/>,
-        },
-        {
-          path: "event",
-          element: <Event/>,
-        }
-      ]
-    },   
+    },
+    {
+      path: "/login",
+      element: <Login/>,
+      errorElement: <NotFound/>,
+    },
+    {
+      path: "/register",
+      element: <Register/>,
+      errorElement: <NotFound/>,
+    },
+    {
+      path: "/event",
+      element: <Event/>,
+      errorElement: <NotFound/>,
+    } 
 ]

@@ -4,22 +4,25 @@ import Logo from "./Logo";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import LangSwitchMenu from "./LangSwitchMenu";
+import { useFullScreen } from "utils/useFullScreen";
 
 
 export default function Header() {
     const { t } = useTranslation();
     const [ langMenu, setLangMenu ] = useState(false);
+    const { state } = useFullScreen()
+    const { headerType } = state
     
     const onHandleMenu = () => setLangMenu(prev => !prev)
 
     return(
-        <header className={styles.header}>
+        <header className={styles.header} id="header" data-type={headerType}>
             <div className={styles["header-wrapper"]}>
                 <Logo/>
                 <nav className={styles.nav}>
                     <ul>
                         <li className={styles.btn}>
-                            <Link to={"/price"}>가격정책</Link>
+                            <Link to={"/price"}>{t("menu.nav1")}</Link>
                         </li>
                         <li className={`${styles.btn} ${styles["lang-btn-wrapper"]}`}>
                             <div className={styles["open-lang-btn"]} onClick={onHandleMenu}>
@@ -34,12 +37,19 @@ export default function Header() {
                         </li>
                         
                         <li className={styles.btn}>
-                            <Link to={"/login"} className={styles["btn-login"]}>로그인</Link>
+                            <Link to={"/login"} className={styles["btn-login"]}>{t("menu.nav2")}</Link>
                         </li>
                         <li className={styles.btn}>
-                            <Link to={"/login"} className={styles["btn-free"]}>무료로 시작하기</Link>
+                            <Link to={"/register"} className={styles["btn-free"]}>{t("menu.btn")}</Link>
                         </li>
                     </ul>
+                </nav>
+                
+                <nav className={styles["apply-nav"]}>
+                    <h5>VRIN 3D를 사용해보고 싶다면</h5>
+                    <Link to={"/register"} className={styles["btn-free"]}>
+                        <span>무료로 시작하기</span>
+                    </Link>
                 </nav>
             </div>
         </header>
