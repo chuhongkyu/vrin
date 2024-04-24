@@ -24,7 +24,8 @@ i18n
             nav1: "가격정책",
             language : "KOR",
             nav2: "로그인",
-            btn: "무료로 시작하기"
+            btn: "무료로 시작하기",
+            text: "VRIN 3D를 사용해보고 싶다면"
           },
           main: {
             section01: {
@@ -99,7 +100,8 @@ i18n
             nav1: "Pricing",
             language : "ENG",
             nav2: "Log in",
-            btn: "Get started for free"
+            btn: "Get started for free",
+            text: "If you want to use VRIN 3D"
           },
           main: {
             section01: {

@@ -13,7 +13,7 @@ export default function SlickSlider() {
 
     const previous = useCallback(() => slickRef?.current?.slickPrev(), []);
     const next = useCallback(() => slickRef?.current?.slickNext(), []);
-    const { state, dispatch } = useFullScreen()
+    const { dispatch } = useFullScreen()
 
     const settings = {
         dots: false,
