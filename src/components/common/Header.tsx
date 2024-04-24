@@ -12,7 +12,6 @@ export default function Header() {
     
     const onHandleMenu = () => setLangMenu(prev => !prev)
 
-    const onHandleSwitch = () => {}
     return(
         <header className={styles.header}>
             <div className={styles["header-wrapper"]}>

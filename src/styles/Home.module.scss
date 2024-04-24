@@ -34,6 +34,20 @@
                 font-weight: 400;
                 line-height: 140%;
             }
+            .btn-free{
+                width: 100%;
+                max-width: 326px;
+                padding: 16px;
+                margin-top: 56px;
+                border-radius: 6px;
+                background-color: rgb(55, 55, 204);
+                color: $color-white;
+                a{
+                    font-size: 2.4rem;
+                    font-weight: 600;
+                    line-height: 140%;
+                }
+            }
         }
     }
 }
@@ -556,6 +570,23 @@
                         }
                     }
                 }
+                .btn-more{
+                    margin: 24px 0;
+                    width: 100%;
+                    max-width: 400px;
+                    padding: 12px;
+                    border-radius: 6px;
+                    text-align: center;
+                    background-color: rgb(55, 55, 204);
+                    color: rgb(230, 232, 235);
+                    span{
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        line-height: 140%;
+                        text-align: center;
+                        color: rgb(230, 232, 235);
+                    }
+                }
             }
             .banner{
                 border-top-left-radius: 16px;
@@ -563,17 +594,51 @@
             }
             .modal-caption{
                 display: flex;
+                justify-content: space-between;
                 .modal-text-group{
+                    display: flex;
+                    align-items: center;
+                    .checkbox-group{
+                        cursor: pointer;
+                        display: inline-flex;
+                        -webkit-box-align: center;
+                        align-items: center;
+                        -webkit-box-pack: center;
+                        justify-content: center;
+                        position: relative;
+                        vertical-align: middle;
+                        -webkit-tap-highlight-color: transparent;
+                        background-color: transparent;
+                        input[type="checkbox"]{
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            top: 0px;
+                            left: 0px;
+                            appearance: none;
+                            background: none;
+                            border: 0;
+                            border-radius: 0;
+                            margin: 0;
+                        }
+                        .box-svg{
+                            display: block;
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
                     
-                    .box-svg{
+                    .text{
                         display: block;
-                        width: 24px;
-                        height: 24px;
-                        
+                        margin-left: 8px;
+                        color: rgb(189, 193, 199);
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        line-height: 140%;
                     }
                 }
-                .x-icon{
-
+                .x-btn{
+                    cursor: pointer;
                 }
             }
         }

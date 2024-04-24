@@ -7,7 +7,7 @@ import { lockScroll, unlockScroll } from 'utils/helper';
 import { useFullScreen } from 'utils/useFullScreen';
 
 function App() {
-  const { state } = useFullScreen()
+  const { state, dispatch } = useFullScreen()
   const { modal, viewMode } = state
 
   useEffect(()=>{
@@ -16,14 +16,18 @@ function App() {
     }else{
       unlockScroll()
     }
-},[viewMode, modal])
+  },[viewMode, modal])
+
+  useEffect(()=>{
+    dispatch({ type: "CHECK_TODAY_MODAL" })
+  },[])
 
   return (
     <>
       <Header/>
       <ScrollContainer/>
       {viewMode && <SliderView />}
-      {/* {modal && <Modal/>} */}
+      {modal && <Modal/>}
     </>
   );
 }
