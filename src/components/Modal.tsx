@@ -11,6 +11,8 @@ export default function Modal() {
 
     const mobile = useCheckwViewPort(600 + 1);
 
+    const handleChange = () => setChecked(!checked)
+
     const onClose = () => {
         dispatch({ 
             type: "CLOSE_MODAL", 
@@ -50,7 +52,7 @@ export default function Modal() {
                         <div className={styles["modal-caption"]}>
                             <div className={styles["modal-text-group"]}>
                                 <span className={styles["checkbox-group"]} onClick={()=> setChecked(!checked)}>
-                                    <input id="today" className={styles.checkbox} checked={checked} type="checkbox"/>
+                                    <input id="today" className={styles.checkbox} onChange={handleChange} checked={checked} type="checkbox"/>
                                     <svg className={styles["box-svg"]} viewBox="0 0 24 24">
                                         {checked ?
                                         <path fill="rgb(255, 255, 255)" d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>:

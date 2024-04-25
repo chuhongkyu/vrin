@@ -17,7 +17,7 @@ export default function MobileSlickSlider() {
     return(
         <div className={styles["content-slider"]}>
             <Slider {...settings}>
-                <a href="https://www.instagram.com/p/Ckze-2mgevQ" target="_blank" aria-label="Go to Instagram">
+                <a href="https://www.instagram.com/p/Ckze-2mgevQ" rel="noreferrer" target="_blank" aria-label="Go to Instagram">
                     <div
                         className={styles.card}
                         style={{backgroundImage: "url(/assets/carousel_thumbnail_1_tablet-3d999a05.png)"}}>
@@ -26,7 +26,7 @@ export default function MobileSlickSlider() {
                         <div className={styles.dim}/>
                     </div>
                 </a>
-                <a href="https://www.youtube.com/watch?v=FxhqKo1b5hA&feature=youtu.be" target="_blank" aria-label="Go to Youtube">
+                <a href="https://www.youtube.com/watch?v=FxhqKo1b5hA&feature=youtu.be" rel="noreferrer" target="_blank" aria-label="Go to Youtube">
                     <div
                         className={styles.card}
                         style={{backgroundImage: "url(/assets/carousel_thumbnail_2_tablet-862ac944.png)"}}>
@@ -35,7 +35,7 @@ export default function MobileSlickSlider() {
                         <div className={styles.dim}/>
                     </div>
                 </a>
-                <a href="https://www.instagram.com/p/Ciw4xWSAhWU" target="_blank" aria-label="Go to Instagram">
+                <a href="https://www.instagram.com/p/Ciw4xWSAhWU" rel="noreferrer" target="_blank" aria-label="Go to Instagram">
                     <div
                         className={styles.card}
                         style={{backgroundImage: "url(/assets/carousel_thumbnail_3_tablet-c70ea0d9.png)"}}>

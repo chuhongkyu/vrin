@@ -22,7 +22,7 @@ function App() {
   useEffect(()=>{
     dispatch({ type: "CHECK_TODAY_MODAL" })
     dispatch({ type: "HANDLE_HEADER", payload : "NORMAL"})
-  },[])
+  },[dispatch])
 
   return (
     <>

@@ -1,7 +1,7 @@
 export default function Price() {
     return(
-        <div>
-            
-        </div>
+        <>
+            <h1>가격 정책</h1>
+        </>
     )
 }

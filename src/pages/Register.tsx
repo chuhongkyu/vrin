@@ -1,7 +1,7 @@
 export default function Register() {
     return(
-        <div>
-            
-        </div>
+        <>
+            <h1>회원가입</h1>
+        </>
     )
 }

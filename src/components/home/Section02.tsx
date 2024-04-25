@@ -50,7 +50,7 @@ export default function Section02() {
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('scroll', handleViewport);
         };
-    }, []);
+    }, [dispatch]);
 
     
     return(

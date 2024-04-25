@@ -9,24 +9,24 @@ export default function FloatBtn() {
     const [isActive, setIsActive] = useState(true);
 
     useEffect(() => {
+
+        const currentRef = pointRef.current
         const options = {
-            root: null, // null은 viewport를 의미합니다.
+            root: null,
             rootMargin: '0px',
-            threshold: 0.5 // 요소가 화면에 50% 이상 보일 때 감지합니다.
+            threshold: 0.1
         };
 
         const observer = new IntersectionObserver(([entry]) => {
             setIsActive(!entry.isIntersecting);
         }, options);
 
-        if (pointRef.current) {
-            observer.observe(pointRef.current);
+        if (currentRef ) {
+            observer.observe(currentRef );
         }
 
         return () => {
-            if (pointRef.current) {
-                observer.unobserve(pointRef.current);
-            }
+            if (currentRef ) observer.unobserve(currentRef);
         };
     }, []);
 

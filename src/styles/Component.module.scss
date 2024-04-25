@@ -8,7 +8,8 @@
   top: 0px;
   left: 0px;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(50px);
   .header-wrapper{
     padding: 0 80px;
     width: 100%;
@@ -207,9 +208,13 @@
 @media screen and (max-width:$mobile-width) {
   .header{
     height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     .header-wrapper{
       padding: 0 20px;
       position: relative;
+      height: 60px;
       .menu-left{
         display: flex;
         align-items: center;
@@ -237,51 +242,47 @@
           }
         }
       }
-      .menu-container{
-        position: absolute;
-        left: 0;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 32px 20px;
-        top: 100%;
-        .menu-nav{
-          color: rgb(255, 255, 255);
-          font-size: 1.4rem;
-          font-weight: 600;
-          line-height: 140%;
-          letter-spacing: 0px;
-          cursor: pointer;
-        }
-        .lang-group{
-          display: flex;
-          margin-top: 30px;
-          .lang{
-            font-size: 1.4rem;
-            font-weight: 600;
-            line-height: 140%;
-            letter-spacing: 0px;
-            cursor: pointer;
-            color: rgb(86, 93, 99);
-            display: flex;
-            &.active{
-              color: $color-white;
-            }
-            &:not(:last-of-type):after{
-              content: '';
-              display: block;
-              width: 1px;
-              height: 18px;
-              background-color: rgb(111, 117, 123);
-              margin: 0px 8px;
-            }
-          }
-        }
-      }
     }
     &[data-type="ACTIVE"]{
       .header-wrapper{
         .nav{
           display: block;
+        }
+      }
+    }
+    .menu-container{
+      width: 100%;
+      padding: 12px 20px 32px;
+      .menu-nav{
+        color: rgb(255, 255, 255);
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: 0px;
+        cursor: pointer;
+      }
+      .lang-group{
+        display: flex;
+        margin-top: 30px;
+        .lang{
+          font-size: 1.4rem;
+          font-weight: 600;
+          line-height: 140%;
+          letter-spacing: 0px;
+          cursor: pointer;
+          color: rgb(86, 93, 99);
+          display: flex;
+          &.active{
+            color: $color-white;
+          }
+          &:not(:last-of-type):after{
+            content: '';
+            display: block;
+            width: 1px;
+            height: 18px;
+            background-color: rgb(111, 117, 123);
+            margin: 0px 8px;
+          }
         }
       }
     }
